@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar"/>
+
+
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorGreySeperator"
+        android:id="@+id/bottom_navigation"/>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical" android:id="@+id/linearlayout" >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="Craft Gothic"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:text="Add New Customer "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="Craft Gothic"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:text="Information"/>
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="Craft Gothic"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:hint="Name"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text"
+            android:layout_marginTop="15dp"
+            android:fontFamily="Craft Gothic"
+            android:textColor="@color/colorBlack"
+            android:selectAllOnFocus="true"
+            android:id="@+id/textaddress"/>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="Craft Gothic"
+            android:hint="Email"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="15dp"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/txtmobileno"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText3"
+            android:fontFamily="Craft Gothic"
+            android:ems="10"
+            android:layout_marginTop="15dp"
+            android:maxLength="10"
+            android:textColor="@color/colorBlack"
+            android:hint="Mobile No."
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/colorOffWhite"
+            android:layout_marginTop="15dp"
+            android:fontFamily="Craft Gothic"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
+
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

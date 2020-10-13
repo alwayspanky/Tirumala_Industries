@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.vencent.tirumalaindustries">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_ti300"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.Activity_AdminDashboard"/>
+        <activity android:name=".activity.Activity_SalesmanagerList"/>
+        <activity android:name=".activity.Activity_CustomerList"/>
+        <activity android:name=".activity.ActivityOrderList"/>
+        <activity android:name=".activity.Activity_Manufracturer"/>
+        <activity android:name=".activity.Activity_CustomerOrder"/>
+        <activity android:name=".activity.Activity_StockManagement"/>
+        <activity android:name=".activity.Activity_SalemanagerHome"/>
+        <activity android:name=".activity.Activity_AddNewCustomer"/>
+        <activity android:name=".activity.Activity_AddNewOrder"/>
+        <activity android:name=".activity.Activity_SaleManagerOrderlist"/>
+        <activity android:name=".activity.Activity_CustomerAddorder"/>
+        <activity android:name=".navigations.Activity_AddStock"/>
+        <activity android:name=".activity.Activity_Payment"/>
+        <activity android:name=".navigations.Activity_PendingOrder"/>
+        <activity android:name=".activity.Activity_Customerorderlist"/>
+        <activity android:name=".activity.Activity_AdminOrderlists"/>
+        <activity android:name=".navigations.Activity_MenufactureOrderlist"/>
+        <activity android:name=".activity.Activity_AddSalesManager"/>
+        <activity android:name=".navigations.Activity_PendingCreditOrder"/>
+        <activity android:name=".activity.Activity_SalesManagerDashBoard"/>
+        <activity android:name=".activity.Activity_BrokarageList"/>
+        <activity android:name=".activity.Activity_SaleUnderCustomerOrder"/>
+        <activity android:name=".navigations.Activity_Completedorder"/>
+        <activity android:name=".navigations.Activity_DispatchedOrder"/>
+        <activity android:name=".activity.Activity_OrderDashBorad"/>
+        <activity android:name=".activity.Activity_ConfirmOrders"/>
+        <activity android:name=".orders.Activity_ShowConfirmsOrders"/>
+        <activity android:name=".orders.Activity_ConfirmOrderCustomerList"/>
+        <activity android:name=".orders.Activity_showConfirmedOrderLists"/>
+        <activity android:name=".orders.Activity_ChangeConfirmedtoDispatched"/>
+        <activity android:name=".orders.Activity_ShowDistpatchedOrder"/>
+        <activity android:name=".orders.Activity_ChangedDispatchedtoDelivery"/>
+        <activity android:name=".orders.Activity_ShowDeliveryOrder"/>
+        <activity android:name=".activity.Activity_ShowPendingCreditorder"/>
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+    </application>
+
+</manifest>

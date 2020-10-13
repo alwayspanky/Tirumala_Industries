@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/deleteicon"
+        android:id="@+id/btnClose"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                 android:id="@+id/txtName"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:text="Enter Driver Details"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="5dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textdate"
+                android:layout_marginTop="15dp"
+                android:fontFamily="Craft Gothic"
+                android:hint="Date"
+                android:textColor="@color/colorBlack"
+                android:selectAllOnFocus="true"/>
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:id="@+id/spinnerquantity"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/prodquantity"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/bagssize"
+                android:layout_height="wrap_content" />
+        </LinearLayout>-->
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/drivername"
+                android:hint=" Driver Name"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/drivermobile"
+                android:hint="Mobile No"
+                android:layout_height="wrap_content" />
+        </LinearLayout>-->
+
+     <!--   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/vehicleno"
+                android:hint="Vechicle No."
+                android:layout_height="wrap_content" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+           <Button
+               android:layout_width="100dp"
+               android:layout_height="40dp"
+               android:background="@drawable/rounded_button"
+               android:id="@+id/btn_ok"
+               android:text="Send"
+               android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

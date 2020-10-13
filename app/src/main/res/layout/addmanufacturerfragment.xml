@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout" >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="Craft Gothic"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp"
+        android:text="Add new Broker"/>
+
+
+
+
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="Craft Gothic"
+        android:ems="10"
+        android:hint="Name"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:selectAllOnFocus="true" />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="Craft Gothic"
+        android:selectAllOnFocus="true"
+        android:id="@+id/textaddress"/>
+
+    <EditText
+        android:id="@+id/txtmobile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="Craft Gothic"
+        android:hint="Mobile"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="Craft Gothic"
+        android:hint="Email"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorOffWhite"
+        android:layout_marginTop="15dp"
+        android:fontFamily="Craft Gothic"
+        android:text="submit"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical" android:id="@+id/linearlayout" >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="Craft Gothic"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp"
+        android:text="Add Raw Materials"/>
+
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/spinnermanufacture"/>
+
+
+    <EditText
+        android:id="@+id/txtmenuName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="Craft Gothic"
+        android:ems="10"
+        android:hint="Menu Name"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:selectAllOnFocus="true" />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Quantity in Quintals"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="Craft Gothic"
+        android:selectAllOnFocus="true"
+        android:id="@+id/textnoofquantity"/>
+
+   <!-- <EditText
+        android:id="@+id/txtprices"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="Craft Gothic"
+        android:hint="Price per Quintals"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txttotalprices"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="Craft Gothic"
+        android:hint="Total Price"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:inputType="number" />-->
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorOffWhite"
+        android:layout_marginTop="15dp"
+        android:fontFamily="Craft Gothic"
+        android:text="submit"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+</LinearLayout>

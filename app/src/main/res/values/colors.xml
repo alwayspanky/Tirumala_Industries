@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a3cd39</color>  <!--Sky Blue -->
+    <color name="colorPrimaryDark">#a3cd39</color>  <!--Sky Blue Dark -->
+    <color name="colorText">#262626</color>
+    <color name="colorAccent">#df9439</color>
+    <color name="colorPink">#e9317b</color>
+    <color name="colorDarkYellow">#fadf2e</color>
+    <color name="colorPressedYellow">#dbc328</color>
+    <color name="colorBlue">#94edfd</color>
+    <color name="colorLightBlue">#e9fbff</color>
+    <color name="colorGreen">#81b078</color>
+    <color name="colorDarkGreen">#156879</color>
+    <color name="colorblues">#0274be</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorYellow">#f2f3d3</color>
+    <color name="colorLogo">#09BCD3</color>
+    <color name="colorGreySeperator">#bfbfbf</color>
+    <color name="colorGrey">#3b3b3b</color>
+    <color name="colorOrange">#fdb714</color>
+    <color name="colorGreenOff">#98ce44</color>
+    <color name="colorOffWhite">#efefef</color>
+    <color name="colorlogindark">#ed4057</color>
+    <color name="colorloginfent">#f8bebc</color>
+</resources>
