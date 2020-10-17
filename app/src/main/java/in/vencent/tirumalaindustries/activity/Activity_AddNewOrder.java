@@ -265,7 +265,6 @@ public class Activity_AddNewOrder extends AppCompatActivity {
         private final String mName, mQuantity, mBagsize, mTotalbags, mPrice, mTotalPrice;
         private String response;
 
-
         public AddNewOrderTask(String menuname, String quantity, String bagsSize, String totalbages, String price, String totalPrice) {
             this.mName = menuname;
             this.mQuantity = quantity;
