@@ -28,7 +28,7 @@ import in.vencent.tirumalaindustries.orders.Activity_ConfirmOrderCustomerList;
 public class Activity_OrderDashBorad extends AppCompatActivity {
 
     public Toolbar toolbar;
-    public LinearLayout pendingorder, confirmedorder, dispatchedorder, completedorder;
+    public LinearLayout pendingorder, confirmedorder, dispatchedorder, deliveredorder;
     public Intent intent;
     String Name;
 
@@ -43,9 +43,9 @@ public class Activity_OrderDashBorad extends AppCompatActivity {
         this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_right);
 
         pendingorder = (LinearLayout)findViewById(R.id.pendingorder);
-        confirmedorder = (LinearLayout)findViewById(R.id.confirmed);
+//        confirmedorder = (LinearLayout)findViewById(R.id.confirmedorder);
         dispatchedorder = (LinearLayout)findViewById(R.id.dispatchorder);
-        completedorder = (LinearLayout)findViewById(R.id.Completeorder);
+//        deliveredorder = (LinearLayout)findViewById(R.id.Deliverorder);
 
         pendingorder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,13 +55,13 @@ public class Activity_OrderDashBorad extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        confirmedorder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(Activity_OrderDashBorad.this, Activity_ConfirmOrderCustomerList.class);
-                startActivity(intent);
-            }
-        });
+//        confirmedorder.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                intent = new Intent(Activity_OrderDashBorad.this, Activity_ConfirmOrderCustomerList.class);
+//                startActivity(intent);
+//            }
+//        });
         dispatchedorder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,13 +69,13 @@ public class Activity_OrderDashBorad extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        completedorder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(Activity_OrderDashBorad.this, Activity_Completedorder.class);
-                startActivity(intent);
-            }
-        });
+//        deliveredorder.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                intent = new Intent(Activity_OrderDashBorad.this, Activity_Completedorder.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 

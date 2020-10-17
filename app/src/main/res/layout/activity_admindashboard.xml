@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.Activity_AdminDashboard"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
@@ -28,7 +29,7 @@
             android:layout_width="300dp"
             android:layout_height="match_parent"
             app:headerLayout="@layout/nav_headers"
-            android:theme="@style/NavigationView"
+            app:theme="@style/NavigationView"
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
             app:menu="@menu/admin_drawer" />

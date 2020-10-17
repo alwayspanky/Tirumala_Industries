@@ -28,7 +28,7 @@
             android:layout_width="300dp"
             android:layout_height="match_parent"
             app:headerLayout="@layout/nav_headers"
-            android:theme="@style/NavigationView"
+            app:theme="@style/NavigationView"
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
             app:menu="@menu/activity_salesmanager_drawer" />

@@ -40,6 +40,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -48,12 +49,45 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textdate"
+                android:id="@+id/editText3"
+                android:layout_marginTop="15dp"
+                android:fontFamily="Craft Gothic"
+                android:hint="Driver Name"
+                android:textColor="@color/colorBlack"
+                android:selectAllOnFocus="true"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_driver_number"
+                android:layout_marginTop="15dp"
+                android:fontFamily="Craft Gothic"
+                android:hint="Driver Mobile Number"
+                android:textColor="@color/colorBlack"
+                android:selectAllOnFocus="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_vehicle_number"
+                android:layout_marginTop="15dp"
+                android:fontFamily="Craft Gothic"
+                android:hint="Vehicle Number"
+                android:textColor="@color/colorBlack"
+                android:selectAllOnFocus="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_date"
                 android:layout_marginTop="15dp"
                 android:fontFamily="Craft Gothic"
                 android:hint="Date"
                 android:textColor="@color/colorBlack"
                 android:selectAllOnFocus="true"/>
+
+
         </LinearLayout>
 
        <!-- <LinearLayout

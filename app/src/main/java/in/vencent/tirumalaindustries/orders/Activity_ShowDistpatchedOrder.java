@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -41,6 +42,7 @@ public class Activity_ShowDistpatchedOrder extends AppCompatActivity {
     ArrayList<Integer> customerIds;
     ProgressDialog pd = null;
     Button submit;
+//    CheckBox checkBox;
     String customerMobile;
     int order_id;
 
@@ -67,7 +69,7 @@ public class Activity_ShowDistpatchedOrder extends AppCompatActivity {
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(llm);
-        submit = (Button)findViewById(R.id.btn_received);
+        submit = findViewById(R.id.btn_received);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

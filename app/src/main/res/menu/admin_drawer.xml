@@ -11,38 +11,38 @@
             android:id="@+id/nav_allorder"
             android:icon="@mipmap/ic_order"
             android:title="All orders" />
-        <item
-            android:id="@+id/nav_addStock"
-            android:icon="@mipmap/ic_addstock51"
-            android:title="Stock"/>
-        <item
-            android:id="@+id/nav_addSale"
-            android:icon="@mipmap/ic_addsalesmanager51"
-            android:title="Add Sales Manager"/>
-        <item
-            android:id="@+id/nav_Inventory"
-            android:icon="@mipmap/ic_inventory"
-            android:title="Inventory" />
+<!--        <item-->
+<!--            android:id="@+id/nav_addStock"-->
+<!--            android:icon="@mipmap/ic_addstock51"-->
+<!--            android:title="Stock"/>-->
+<!--        <item-->
+<!--            android:id="@+id/nav_addSale"-->
+<!--            android:icon="@mipmap/ic_addsalesmanager51"-->
+<!--            android:title="Add Sales Manager"/>-->
+<!--        <item-->
+<!--            android:id="@+id/nav_Inventory"-->
+<!--            android:icon="@mipmap/ic_inventory"-->
+<!--            android:title="Inventory" />-->
 
-        <item
-            android:id="@+id/nav_pendingorder"
-            android:icon="@mipmap/ic_pending51"
-            android:title="Pending Order" />
+<!--        <item-->
+<!--            android:id="@+id/nav_pendingorder"-->
+<!--            android:icon="@mipmap/ic_pending51"-->
+<!--            android:title="Pending Order" />-->
 
-        <item
-            android:id="@+id/nav_pendingcrdeit"
-            android:icon="@mipmap/ic_pendingcredit"
-            android:title="Pending Credit Order" />
+<!--        <item-->
+<!--            android:id="@+id/nav_pendingcrdeit"-->
+<!--            android:icon="@mipmap/ic_pendingcredit"-->
+<!--            android:title="Pending Credit Order" />-->
 
-        <item
-            android:id="@+id/nav_dispatch"
-            android:icon="@mipmap/ic_dipatch51"
-            android:title="Dispatched Order" />
+<!--        <item-->
+<!--            android:id="@+id/nav_dispatch"-->
+<!--            android:icon="@mipmap/ic_dipatch51"-->
+<!--            android:title="Dispatched Order" />-->
 
-        <item
-            android:id="@+id/nav_complete"
-            android:icon="@mipmap/ic_delivery51"
-            android:title="Delivered Order" />
+<!--        <item-->
+<!--            android:id="@+id/nav_complete"-->
+<!--            android:icon="@mipmap/ic_delivery51"-->
+<!--            android:title="Delivered Order" />-->
 
         <item
             android:id="@+id/nav_salesperson"
@@ -54,10 +54,10 @@
             android:icon="@mipmap/ic_order"
             android:title="Brokers Report"/>
 
-        <item
-            android:id="@+id/nav_manu"
-            android:icon="@mipmap/ic_manu51"
-            android:title="Brokers" />
+<!--        <item-->
+<!--            android:id="@+id/nav_manu"-->
+<!--            android:icon="@mipmap/ic_manu51"-->
+<!--            android:title="Brokers" />-->
 
 
       <item android:id="@+id/nav_logout"

@@ -52,6 +52,8 @@ public class Activity_AdminDashboard extends AppCompatActivity implements Naviga
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admindashboard);
 
+
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -161,57 +163,58 @@ public class Activity_AdminDashboard extends AppCompatActivity implements Naviga
 
             intent = new Intent(this, Activity_OrderDashBorad.class);
             startActivity(intent);
-        } else
-            if (id == R.id.nav_addStock)
-            {
-                intent = new Intent(this, Activity_AddStock.class);
-                startActivity(intent);
-            }else
-                if (id == R.id.nav_addSale)
-                {
-                    intent = new Intent(this, Activity_AddSalesManager.class);
-                    startActivity(intent);
-                }else
-        if (id == R.id.nav_Inventory)
-        {
-            intent = new Intent(this, Activity_StockManagement.class);
-            startActivity(intent);
-        }else
-        if (id == R.id.nav_pendingorder)
-        {
-            intent = new Intent(this, Activity_PendingOrder.class);
-            startActivity(intent);
-        }else
-        if (id == R.id.nav_pendingcrdeit)
-        {
-            intent = new Intent(this, Activity_PendingCreditOrder.class);
-            startActivity(intent);
+//        } else
+//            if (id == R.id.nav_addStock)
+//            {
+//                intent = new Intent(this, Activity_AddStock.class);
+//                startActivity(intent);
+//            }else
+//                if (id == R.id.nav_addSale)
+//                {
+//                    intent = new Intent(this, Activity_AddSalesManager.class);
+//                    startActivity(intent);
+//                }else
+//        if (id == R.id.nav_Inventory)
+//        {
+//            intent = new Intent(this, Activity_StockManagement.class);
+//            startActivity(intent);
+//        }else
+//        if (id == R.id.nav_pendingorder)
+//        {
+//            intent = new Intent(this, Activity_PendingOrder.class);
+//            startActivity(intent);
+//        }else
+//        if (id == R.id.nav_pendingcrdeit)
+//        {
+//            intent = new Intent(this, Activity_PendingCreditOrder.class);
+//            startActivity(intent);
         }else
         if (id == R.id.nav_salesperson)
         {
             intent = new Intent(this,Activity_SalesmanagerList.class);
             startActivity(intent);
 
-        }else if (id == R.id.nav_dispatch)
-        {
-            intent = new Intent(Activity_AdminDashboard.this, Activity_DispatchedOrder.class);
-            startActivity(intent);
-        }else
-            if (id == R.id.nav_complete)
-            {
-                intent = new Intent(Activity_AdminDashboard.this, Activity_Completedorder.class);
-                startActivity(intent);
-            }
+        }
+//        else if (id == R.id.nav_dispatch)
+//        {
+//            intent = new Intent(Activity_AdminDashboard.this, Activity_DispatchedOrder.class);
+//            startActivity(intent);
+//        }else
+//            if (id == R.id.nav_complete)
+//            {
+//                intent = new Intent(Activity_AdminDashboard.this, Activity_Completedorder.class);
+//                startActivity(intent);
+//            }
             if (id == R.id.nav_manureport)
             {
                 intent = new Intent(Activity_AdminDashboard.this, Activity_BrokarageList.class);
                 startActivity(intent);
             }else
-        if (id == R.id.nav_manu)
-        {
-            intent = new Intent(this, Activity_Manufracturer.class);
-            startActivity(intent);
-        }else
+//        if (id == R.id.nav_manu)
+//        {
+//            intent = new Intent(this, Activity_Manufracturer.class);
+//            startActivity(intent);
+//        }else
         if (id == R.id.nav_logout)
         {
             alert();

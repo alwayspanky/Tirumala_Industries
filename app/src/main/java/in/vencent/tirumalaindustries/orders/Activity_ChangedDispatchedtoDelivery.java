@@ -20,6 +20,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 import in.vencent.tirumalaindustries.R;
 import in.vencent.tirumalaindustries.activity.Activity_OrderDashBorad;
@@ -36,6 +37,7 @@ public class Activity_ChangedDispatchedtoDelivery extends AppCompatActivity {
 
     Toolbar toolbar;
     RecyclerView recyclerView;
+    Date date;
     DispatchedToDeliveryAdapter dispatchedToDeliveryAdapter;
     //ChangeConfirmedDispatchedAdapter changeConfirmedDispatchedAdapter;
     ArrayList<RowItemConfirmedOrderInfo> confirmedOrderInfo;

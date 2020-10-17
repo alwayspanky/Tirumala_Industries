@@ -33,6 +33,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 
 import in.vencent.tirumalaindustries.R;
 import in.vencent.tirumalaindustries.activity.Activity_OrderDashBorad;
@@ -84,16 +85,17 @@ public class ShowDispatchedOrderAdapter extends  RecyclerView.Adapter<ViewHolder
         holder.confirmed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             p_id = items.pid;
-             customerNo = PreferenceUtil.getCustomerMobile(context);
-             salesmanager = PreferenceUtil.getManagerMobile(context);
-             order_id = items.invoice_id;
-             Quantities = items.quantity;
-             Quantity = String.valueOf(Double.parseDouble(Quantities) * 100);
-             ProductName = items.item_name;
-             QuantityBags = items.qty_bag;
-             BagsSizes = items.qty_size;
-             VechicleNo = items.vehicle_no;
+                p_id = items.pid;
+
+                customerNo = PreferenceUtil.getCustomerMobile(context);
+                salesmanager = PreferenceUtil.getManagerMobile(context);
+                order_id = items.invoice_id;
+                Quantities = items.quantity;
+                Quantity = String.valueOf(Double.parseDouble(Quantities) * 100);
+                ProductName = items.item_name;
+                QuantityBags = items.qty_bag;
+                BagsSizes = items.qty_size;
+                VechicleNo = items.vehicle_no;
                 Log.d("CustomerMobile", customerNo);
                 Log.d("SalesManager", salesmanager);
                 Log.d("Order_id", String.valueOf(order_id));
@@ -103,6 +105,7 @@ public class ShowDispatchedOrderAdapter extends  RecyclerView.Adapter<ViewHolder
                 Log.d("TUSHARQuantiryToalbage", BagsSizes);
                 Log.d("TUSHARVechicleNo", VechicleNo);
                 showdialogotpgenerating();
+
 
             }
         });
@@ -133,26 +136,52 @@ public class ShowDispatchedOrderAdapter extends  RecyclerView.Adapter<ViewHolder
 
         // attaching data adapter to spinner
         spinner.setAdapter(dataAdapter);*/
-        date.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Calendar cldr = Calendar.getInstance();
-                int day = cldr.get(Calendar.DAY_OF_MONTH);
-                int month = cldr.get(Calendar.MONTH);
-                int year = cldr.get(Calendar.YEAR);
-                // date picker dialog
-                picker = new DatePickerDialog(context,
-                        new DatePickerDialog.OnDateSetListener() {
-                            @Override
-                            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                                Dates = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
-                                Log.d("TusharDate", Dates);
-                                date.setText( Dates);
-                            }
-                        }, year, month, day);
-                picker.show();
-            }
-        });
+
+       try {
+
+           date.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   final Calendar cldr = Calendar.getInstance();
+                   int day = cldr.get(Calendar.DAY_OF_MONTH);
+                   int month = cldr.get(Calendar.MONTH);
+                   int year = cldr.get(Calendar.YEAR);
+                   // date picker dialog
+                   picker = new DatePickerDialog(context,
+                           new DatePickerDialog.OnDateSetListener() {
+                               @Override
+                               public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                                   Dates = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
+                                   Log.d("TusharDate", Dates);
+                                   date.setText( Dates);
+                               }
+                           }, year, month, day);
+                   picker.show();
+               }
+           });
+       }catch (Exception e){
+e.printStackTrace();
+       }
+//        date.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                final Calendar cldr = Calendar.getInstance();
+//                int day = cldr.get(Calendar.DAY_OF_MONTH);
+//                int month = cldr.get(Calendar.MONTH);
+//                int year = cldr.get(Calendar.YEAR);
+//                // date picker dialog
+//                picker = new DatePickerDialog(context,
+//                        new DatePickerDialog.OnDateSetListener() {
+//                            @Override
+//                            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+//                                Dates = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
+//                                Log.d("TusharDate", Dates);
+//                                date.setText( Dates);
+//                            }
+//                        }, year, month, day);
+//                picker.show();
+//            }
+//        });
      /*   spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
